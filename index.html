@@ -104,7 +104,7 @@
 						
 						$('#photo').removeClass();
 						i++;
-						$('#photo').css({'backgroundImage':'url(img/'+i%27+'.jpg)','backgroundSize':'cover'});
+						$('#photo').css({'backgroundImage':'url(img/'+i%32+'.jpg)','backgroundSize':'cover'});
 						play();
 					});
 
@@ -116,7 +116,7 @@
 			function fade(){
 				$('#back').fadeOut(10000,function(){
 					j++;
-					$('#back').css({'backgroundImage': 'url(img/body'+(j%9+1)+'.jpg) ','backgroundSize':'cover'}).fadeIn(10000);
+					$('#back').css({'backgroundImage': 'url(img/body'+(j%15+1)+'.jpg) ','backgroundSize':'cover'}).fadeIn(10000);
 
 					fade();
 				})
